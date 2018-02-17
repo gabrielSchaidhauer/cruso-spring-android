@@ -9,4 +9,5 @@ import com.ogabriel.minicurso.spring.model.entity.Usuario;
 public interface UsuarioRepository extends CrudRepository<Usuario, Long>{
 	
 	Usuario findByNome(String nome);
+	Usuario findByNomeAndSenha(String nome, String senha);
 }

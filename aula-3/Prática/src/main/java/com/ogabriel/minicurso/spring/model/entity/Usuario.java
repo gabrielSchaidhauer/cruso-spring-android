@@ -18,6 +18,9 @@ public class Usuario {
 	@Column(name = "nome", unique = true)
 	private String nome;
 
+	@Column(name = "senha")
+	private String senha;
+
 	public Long getId() {
 		return id;
 	}
