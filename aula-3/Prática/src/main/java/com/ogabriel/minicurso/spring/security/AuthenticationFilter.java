@@ -26,7 +26,8 @@ public class AuthenticationFilter extends GenericFilterBean {
     private UsuarioService service;
 
     @Override
-    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
+            throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         final String authorization = request.getHeader("Authorization");
 

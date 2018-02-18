@@ -11,7 +11,8 @@ public class AuthenticatedUser implements Authentication {
     private AuthenticatedPrincipal principal;
 
     public AuthenticatedUser (Usuario usuario) {
-        this.principal = new AuthenticatedPrincipal(usuario);
+        this.principal =
+                new AuthenticatedPrincipal(usuario);
     }
 
     @Override
@@ -43,7 +44,6 @@ public class AuthenticatedUser implements Authentication {
     public void setAuthenticated(boolean b) throws IllegalArgumentException {
 
     }
-
     @Override
     public String getName() {
         return null;
