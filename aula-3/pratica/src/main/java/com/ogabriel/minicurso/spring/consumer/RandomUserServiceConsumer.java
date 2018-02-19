@@ -17,7 +17,9 @@ public class RandomUserServiceConsumer {
     }
 
     public String getRandomUser() {
-        String result = restClient.getForObject("https://randomuser.me/api/", String.class);
+        String result = restClient.getForObject(
+                "https://randomuser.me/api/",
+                String.class);
         return result;
     }
 }
