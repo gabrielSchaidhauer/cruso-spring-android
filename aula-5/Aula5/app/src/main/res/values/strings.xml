@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Aula 5</string>
+    <string name="example_button">Mudar Texto</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="next_button">Próxima Atividade</string>
 </resources>

@@ -1,8 +1,11 @@
 package com.example.gabriel.aula5;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,5 +51,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d("teste", "ondestroy");
+    }
+
+    public void changeTextClickHandler(View view) {
+        TextView helloText = findViewById(R.id.hello_text);
+        helloText.setText("Botão foi clicado");
+    }
+
+    public void navigateToNext(View view) {
+        TextView helloText = findViewById(R.id.hello_text);
+
+        Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra("TextoHello", helloText.getText());
+        startActivity(intent);
     }
 }
